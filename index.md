@@ -13,6 +13,6 @@
     - YADE
 1. [GMTSAR](tool/gmt_sar.md)
 
-## まとまっていないメモ・記事
+# まとまっていないメモ・記事
 1. [Metashape](misc/2024-02-07_Metashape_workflow.md)
 1. [MEMS加速度センサー](misc/2024-02-07_MEMS_acc.md)
