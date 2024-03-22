@@ -6,6 +6,11 @@ date: "2024-03-22"
 ## 公式ダウンロード元
 - 
 
+## 移動・回転・拡大縮小
+- 拡大縮小はマウスホイール
+- 回転はマウスホイールの押し込みドラッグ
+- 平行移動はshift+マウスホイールの押し込みドラッグ
+
 ## 物体の連続配置
 ### Array Modifierの適用
 - 左上のModelingをクリック
@@ -22,6 +27,26 @@ date: "2024-03-22"
 - キーボードのpを押し，出てきたウインドウのSeperate by Loose Partsを押す
 - Object Modeに入り，左上のObject>SEt Origin>Origin to Geometryを押す
     - こうすることでそれぞれの物体の初期位置が原点となった状態で物体が配置される
+
+## 物体にテクスチャ(チェッカーボード)を貼る
+- 右側の画面でCube>Cube>Materialというところをクリックする
+- 左上の平面にボールが置かれているアイコン(Editor Type)からGeneral>Shader Editorをクリックする
+- 何も表示されていない場合は左上のView>Frame Allで正しい画面が表示される
+- 画面真ん中に表示されているものは右側の画面のセントロイド球のようなものをクリックして出てくるMaterialの画面と同じ
+- 左上のWindow->New Windowをクリックすると同じような画面がもう一つ表示される．
+- 一番左上のアイコンをクリックして，3D View Portをクリックするといつもの画面になる．
+- テクスチャの結果を見たいので，右上の白丸のアイコン(View Port Shading)をクリックすると結果がすぐに反映される
+    - 試しにもともとのShader EditorのBase Colorの部分を変えてみると色が変わるはず
+- 左上のAdd>Texture>Checker Textureをクリックする
+- 出てきたChecker TextureとPrincipled BSDFのBase Colorをマウスでドラッグしてつなぐ
+- colorを変えるとchecker textureを変化させることができる
+- scaleは一つの面に何マスの模様を生じさせるか
+    - 2であれば2×2の模様が出現する
+
+## 寸法が見たい！
+- 左側の画面で寸法が見たい物体を選択
+- 左真ん中の■にフォーカスがあたったようなアイコン(Object)をクリックＳ
+- Transformの中に色々情報が詰まっている
 
 
 ## 魚眼レンズへの設定
