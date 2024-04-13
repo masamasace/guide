@@ -1,6 +1,10 @@
 # 研究の進め方
 
 ## テンプレ等
+- パワーポイントのテンプレート
+    - [4:3用](source\slide_template_v4_4-3.pptx)
+    - [16:9用](source/slide_template_v4_16-9.pptx)
+
 
 ## 論文の書き方
 
