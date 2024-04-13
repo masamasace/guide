@@ -13,6 +13,7 @@
     - YADE
 1. [GMTSAR](tool/gmt_sar.md)
 1. [Blender](tool/blender.md)
+1. [Stitching](tool/stitching.md)
 
 # まとまっていないメモ・記事
 1. [Metashape](misc/2024-02-07_Metashape_workflow.md)
