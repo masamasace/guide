@@ -1,5 +1,6 @@
 地震工学や地盤工学関連の研究情報をまとめたページです．
 
+
 # 研究の進め方
 
 ## テンプレ等
@@ -12,16 +13,15 @@
 
 ## スライドの作り方
 
-# ツールの使い方
+# あまりまとまってない知識など
 
 1. 個別要素法関係
     - LAMPPS
     - YADE
-1. [GMTSAR](tool/gmt_sar.md)
-1. [Blender](tool/blender.md)
-1. [Stitching](tool/stitching.md)
-
-# まとまっていないメモ・記事
+1. [GMTSAR](knowledge/gmt_sar.md)
+1. [Blender](knowledge/blender.md)
+1. [Stitching](knowledge/stitching.md)
+1. [地震波の解析](knowledge/earthquake_record_analysis.md)
 1. [Metashape](misc/2024-02-07_Metashape_workflow.md)
 1. [MEMS加速度センサー](misc/2024-02-07_MEMS_acc.md)
 
