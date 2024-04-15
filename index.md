@@ -15,16 +15,20 @@
 
 # あまりまとまってない知識など
 
-1. 個別要素法関係
+1. 個別要素法
     - LAMPPS
     - YADE
+        - [YADEのトラブルシュートメモ](knowledge/DEM/yade_01.md)
 1. [GMTSAR](knowledge/gmt_sar.md)
 1. [Blender](knowledge/blender.md)
 1. [Stitching](knowledge/stitching.md)
 1. [地震波の解析](knowledge/earthquake_record_analysis.md)
-1. [Metashape](misc/2024-02-07_Metashape_workflow.md)
-1. [MEMS加速度センサー](misc/2024-02-07_MEMS_acc.md)
+1. [Metashape](knowledge/metashape.md)
+1. [MEMS加速度センサー](knowledge/mems_acc.md)
 1. [QGIS](knowledge/qgis.md)
+
+# 自分の考えに関するメモ
+1. [AIツールの使い方](misc/ai_tools.md)
 
 # リンク集
 1. [長岡技術科学大学 地震工学研究室](https://whs.nagaokaut.ac.jp/gee-l/)
