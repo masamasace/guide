@@ -13,18 +13,22 @@
 ## スライドの作り方
 
 # あまりまとまってない知識など
-
-1. 個別要素法
-    - LAMPPS
-    - YADE
-        - [YADEのトラブルシュートメモ](knowledge/DEM/yade_01.md)
-1. [GMTSAR](knowledge/gmt_sar.md)
-1. [Blender](knowledge/blender.md)
-1. [Stitching](knowledge/stitching.md)
-1. [地震波の解析](knowledge/earthquake_record_analysis.md)
-1. [Metashape](knowledge/metashape.md)
-1. [MEMS加速度センサー](knowledge/mems_acc.md)
-1. [QGIS](knowledge/qgis.md)
+1. 地盤工学
+    1. 個別要素法
+        1. LAMPPS
+        1. YADE
+            1. [YADEのトラブルシュートメモ](knowledge/DEM/yade_01.md)
+1. 地震工学
+    1. [地震波の解析](knowledge/earthquake_record_analysis.md)
+    1. リモートセンシング
+        1. [GMTSAR](knowledge/gmt_sar.md)
+        1. 空間マッピング(3D再構築)
+            1. [Blender](knowledge/blender.md)
+            1. [Stitching](knowledge/stitching.md)
+            1. [Metashape](knowledge/metashape.md)
+        1. [QGIS](knowledge/qgis.md)
+    1. 電子工作・IoT
+        1. [MEMS加速度センサー](knowledge/mems_acc.md)
 
 # 自分の考えに関するメモ
 1. [AIツールの使い方](misc/ai_tools.md)
