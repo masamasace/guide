@@ -2,7 +2,9 @@
 title: "加速度MEMSセンサー"
 date: "2024-01-17"
 ---
+
 研究用で用いる加速度MEMSセンサーについて，少し調べたくなったのでメモとして残しておきます．現段階の用途としては地震計(微動計)への適用を考えています．
+
 ## [Analog Devices ADXL355](https://www.analog.com/en/products/adxl355.html)
 
 - Analog Devices社製のMEMS型加速度センサー
@@ -39,6 +41,7 @@ date: "2024-01-17"
             - スペックからするとかなり小さいのではないか？
     - またSpecsheetと同様の検討が[Ye et al., 2023](https://www.semanticscholar.org/reader/8dbc1d35a328af46f710ea0a3ea9874cb8c7639e)でも行われている．
         - Resolutionの定義をもう少し詳しく調べる必要があるが，0.655mgの解像度があるとしている．
+
 ## [EPSON M-A352AD10](https://www.epson.jp/prod/sensing_system/pdf/m-a352ad10_briefsheet_j_rev20220401.pdf)
 
 [ナレッジフォーサイト社のHP](https://knowledgeforesight.com/jp/wp/wp-content/uploads/2022/09/YUREMON320220614.pdf)でADXL355を用いた地震計と並行してラインナップされているところから発見 (2024/01/17)
@@ -48,6 +51,7 @@ date: "2024-01-17"
     - 可変ではないかもしれない
 - ODRは最小50~最大1000SPS
 - 3.3V入力電圧
+
 ## 現時点での疑問
 
 - 検証用の振動台をどのように作成するのか
