@@ -659,7 +659,7 @@
         - 問題は非排水繰り返し載荷
             - 少し調べる必要があるためサブノートに移行
                 
-                [DEM 非排水条件の設定法に関する簡易レビュー](https://www.notion.so/DEM-8956e9a4739a45db8e555aa55e6f2b24?pvs=21)
+                [DEM 非排水条件の設定法に関する簡易レビュー](./dem_constant_volume_loading_review.md)
                 
             - [https://yade-dem.org/doc/yade.wrapper.html#yade.wrapper.Peri3dController](https://yade-dem.org/doc/yade.wrapper.html#yade.wrapper.Peri3dController)
                 - Peri3DControllerというコントローラもある
