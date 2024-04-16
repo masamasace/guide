@@ -19,32 +19,20 @@ date: "2024-03-22"
     1. 応力テンソル，ひずみテンソルともに対称テンソルであるため，弾性定数テンソルも対称テンソルとなる
     1. ひずみエネルギー関数が存在する
     1. 軸対称性
-- これらを仮定するとLameの定数$\lambda$と$\mu$を用いて，$\ref{1}$ は次のように表されます．
-    $$
-    \sigma_{ij} = \lambda \varepsilon_{kk} \delta_{ij} + 2 \mu \varepsilon_{ij}
-    $$
+- これらを仮定するとLameの定数$\lambda$と$\mu$を用いて，式(1)は次のように表されます．
+    $$ \sigma_{ij} = \lambda \varepsilon_{kk} \delta_{ij} + 2 \mu \varepsilon_{ij} $$
 - ここで体積ひずみ$\varepsilon_{v}$，平均応力$\sigma_{m}$を以下のように定義します．
     - 体積ひずみ
-    $$
-        \varepsilon_{v} = \varepsilon_{xx} + \varepsilon_{yy} + \varepsilon_{zz}
-    $$
+    $$ \varepsilon_{v} = \varepsilon_{xx} + \varepsilon_{yy} + \varepsilon_{zz} $$
     - 平均応力
-    $$
-        \sigma_{m} = \frac{1}{3} (\sigma_{xx} + \sigma_{yy} + \sigma_{zz})
-    $$
+    $$ \sigma_{m} = \frac{1}{3} (\sigma_{xx} + \sigma_{yy} + \sigma_{zz}) $$
 - このとき，偏差ひずみ$\varepsilon_{d}$, 偏差応力は$\sigma_{d}$は次のように定義されます．
     - 偏差ひずみ
-    $$
-        \varepsilon'_{ij} = \varepsilon_{ij} - \frac{1}{3} \varepsilon_{v} \delta_{ij}  
-    $$
+    $$ \varepsilon'_{ij} = \varepsilon_{ij} - \frac{1}{3} \varepsilon_{v} \delta_{ij} $$
     - 偏差応力
-    $$
-        \sigma'_{ij} = \sigma_{ij} - \sigma_{m} \delta_{ij}
-    $$
+    $$ \sigma'_{ij} = \sigma_{ij} - \sigma_{m} \delta_{ij} $$
 
-
-    C_{ijkl} = \lambda \delta_{ij} \delta_{kl} + \mu (\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})
-    $$
+    $$ C_{ijkl} = \lambda \delta_{ij} \delta_{kl} + \mu (\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk}) $$
     - ここで$\lambda$は体積弾性率，$\mu$はせん断弾性率，$\delta_{ij}$はクロネッカーのデルタです．
 
 ## 水平成層構造を伝播する弾性波の理論
