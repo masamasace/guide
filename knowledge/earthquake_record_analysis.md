@@ -13,7 +13,7 @@ date: "2024-03-22"
 
     $$ \sigma_{ij} = \sum_{k,l} C_{ijkl} \varepsilon_{kl} \tag{1} $$
 
-    - ここで，$\sigma_{ij}$は応力テンソル，$C_{ijkl}$は弾性定数テンソル，$\varepsilon_{kl}$はひずみテンソルとなります．
+    - ここで， \(\sigma_{ij}\) は応力テンソル， \(C_{ijkl}\) は弾性定数テンソル， \(\varepsilon_{kl}$ はひずみテンソルとなります．
 - 3次元での挙動を考えれば， $i,j,k,l$ はそれぞれ $x,y,z$ の3つの方向を取りうるため，$C_{ijkl}$ は $3^4=81$ 個の要素を持ちます．
 - しかし次のような理由から，独立な弾性定数な弾性定数は5個となる
     1. 応力テンソル，ひずみテンソルともに対称テンソルであるため，弾性定数テンソルも対称テンソルとなる
@@ -23,15 +23,23 @@ date: "2024-03-22"
     $$ \sigma_{ij} = \lambda \varepsilon_{kk} \delta_{ij} + 2 \mu \varepsilon_{ij} $$
 - ここで体積ひずみ$\varepsilon_{v}$，平均応力$\sigma_{m}$を以下のように定義します．
     - 体積ひずみ
+
     $$ \varepsilon_{v} = \varepsilon_{xx} + \varepsilon_{yy} + \varepsilon_{zz} $$
+
     - 平均応力
+
     $$ \sigma_{m} = \frac{1}{3} (\sigma_{xx} + \sigma_{yy} + \sigma_{zz}) $$
+
 - このとき，偏差ひずみ$\varepsilon_{d}$, 偏差応力は$\sigma_{d}$は次のように定義されます．
     - 偏差ひずみ
+
     $$ \varepsilon'_{ij} = \varepsilon_{ij} - \frac{1}{3} \varepsilon_{v} \delta_{ij} $$
+
     - 偏差応力
+
     $$ \sigma'_{ij} = \sigma_{ij} - \sigma_{m} \delta_{ij} $$
 
+- このように定義することで，式(1)は次のように表されます．
     $$ C_{ijkl} = \lambda \delta_{ij} \delta_{kl} + \mu (\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk}) $$
     - ここで$\lambda$は体積弾性率，$\mu$はせん断弾性率，$\delta_{ij}$はクロネッカーのデルタです．
 
