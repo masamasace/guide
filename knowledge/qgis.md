@@ -47,7 +47,8 @@ QGISのバージョン3以上でSAGAを使用する方法について説明し�
 
 
 ### 参考リンク
-- [QGIS in Mineral Exploration | 14.5. Installing the SAGA Next Gen Provide](https://qgis-in-mineral-exploration.readthedocs.io/en/latest/source/how_to/add_saga_next_gen.html)
+
+- [QGIS in Mineral Exploration &#124; 14.5. Installing the SAGA Next Gen Provide](https://qgis-in-mineral-exploration.readthedocs.io/en/latest/source/how_to/add_saga_next_gen.html)
 - [Installing the "SAGA Next Gen" plugin in QGIS](https://www.youtube.com/watch?v=VKdaripCups)
 
 ## フィールド計算機で，ある属性フィールドを別の属性フィールドの値によって指定して，新しい属性フィールドを作成する方法
