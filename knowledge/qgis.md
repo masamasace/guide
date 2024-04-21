@@ -3,7 +3,44 @@ title: "QGISの使い方"
 date: "2024-04-15"
 ---
 
-QGISの使い方についてまとめたページです．
+QGISの使い方についてまとめたページです．手法についてはバラバラで整理されていません．
+
+## QGISのバージョン3以上でSAGAを使用する方法
+
+QGISのバージョン3以上でSAGAを使用する方法について説明します．
+1. プラグインをインストールする
+    - プラグイン > 管理とインストール > プラグインをインストールする
+    - `Processing Saga NextGen Provider`プラグインをインストールする
+    - ここに利用可能なSAGAのバージョンが書かれているのでそのバージョンをメモする
+        - 現時点(2024年4月15日)では，`SAGA`のバージョンは9.1，`Processing Saga NextGen Provider`のバージョンは1.0.0でした
+    - 一旦QGISを終了させます．
+
+1. SAGAのインストール
+    - [SAGAのホームページ](https://saga-gis.sourceforge.io/en/index.html)
+    - ダウンロード > `SAGA - 9` > `SAGA - 9.1.0` > `saga-9.1.0_x64.zip`をダウンロードする
+        - 上記はWindowsの場合の例です．他のOSの場合は適宜ダウンロードしてください
+    - ダウンロードしたファイルを解凍します
+    - 解答してできたフォルダごと`C:\Program Files\QGIS 3.28.5\apps\saga`に移します．
+        - ここで，`3.28.5`はQGISのバージョンによって異なります．適宜変更してください．
+        - また，既存のSAGAを残しておきたい場合には，`C:\Program Files\QGIS 3.28.5\apps\`の中に`saga-9.1.0`などのフォルダを作成し，その中に移動させてください．
+    - `C:\Program Files\QGIS 3.28.5\apps\saga`あるいは自分が作成したフォルダの中に`saga_cmd.exe`があることを確認します．
+
+1. QGIS内での設定
+    - QGISを開きます
+    - プロセッシングツールボックスを開きます
+    - スパナ(🔧)のアイコンをクリックします．
+    - `Options -- Processing`の画面が開かれるので，`Providers`タブを選択します．
+    - `SAGANG`の項目にカーソルを合わせ，先ほど作成したフォルダを選択するか，フォルダパスを直接入力します．
+    - `Enable SAGA Import/Export optimizations`にチェックを入れます．
+        - なぜこうするかはわかりません
+    - `OK`をクリックします．
+    - QGISを再起動します．
+    
+
+
+### 参考リンク
+- [QGIS in Mineral Exploration | 14.5. Installing the SAGA Next Gen Provide](https://qgis-in-mineral-exploration.readthedocs.io/en/latest/source/how_to/add_saga_next_gen.html)
+- [Installing the "SAGA Next Gen" plugin in QGIS](https://www.youtube.com/watch?v=VKdaripCups)
 
 ## フィールド計算機で，ある属性フィールドを別の属性フィールドの値によって指定して，新しい属性フィールドを作成する方法
 1. レイヤのプロパティを開く
@@ -16,7 +53,7 @@ QGISの使い方についてまとめたページです．
     - 新しいフィールドを作成するには，新しいフィールドを追加します．
     - 新しいフィールドの名前を入力します．
     - 新しいフィールドの型を選択します．
-    - ` attribute( concat('Peak',  "Exported Time-series (Butterworth-Sectioned)" ))`のような式を入力します．
+    - `attribute( concat('Peak',  "Exported Time-series (Butterworth-Sectioned)" ))`のような式を入力します．
         - この式は，"Exported Time-series (Butterworth-Sectioned)"というフィールドの値を取得し，その前に"Peak"という文字列を追加します．
         - さらにこの文字列が参照したいフィールド名となっており，最終的にそのフィールドの値を新しいフィールドに追加します．
         
