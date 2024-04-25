@@ -5,6 +5,58 @@ date: "2024-04-15"
 
 QGISの使い方についてまとめたページです．内容については系統立って整理されておらず雑多です．
 
+## 粗いメッシュベクターデータから密な点群ベクターデータを作成する方法
+
+1. CRS(座標参照系)を変更する
+    - レイヤのプロパティを開く
+    - `座標参照系`を選択し，直行直角座標系に変更する
+1. 重心(Centorid)を求める
+    - プロセッシングツールボックスを開く
+    - `Centroid`を検索し，選択します
+    - 入力レイヤを選択します
+    - 出力ファイル名を指定します
+    - `Run`をクリックします
+1. IDW(逆距離加重法)を適用する
+    - プロセッシングツールボックスを開く
+    - `IDW`を検索し，`Grid (IDW with nearest neighbor searching)`を選択します
+    - 入力レイヤを選択します
+    - `Smoothing`を適切な値に変更する
+        - このとき`CRS`が直行直角座標系であると単位が`m`になり結果が想像しやすくなる
+    - `The radisu of the search circle`を重心距離の最大値に設定する
+    - `Maximum number of data points to use`を重心点数にする
+    - `Z value from field`を適切なフィールドに設定する
+    - `Additional command-line parameters`に以下の値を入力する
+        - `-txe`と`-tye`を: 点が欲しい範囲を指定したCRSで
+        - `-tr`を適切な値に設定する: 縦方向と横方向の解像度を指定する
+    - 出力ファイル名を指定します
+    - `Run`をクリックします
+1. ここから手順が2つに分かれます．
+    1. 方法1
+        1. `Regular points`を作成する
+            - プロセッシングツールボックスを開く
+            - `Regular points`を検索し，選択します
+            - `Input Extent`を適切な値に変更する
+            - `Point spacing / count`を適切な値に変更する
+                - ここでの値は`IDW`の`-tr`と同じ値かそれよりも大きい値にしましょう
+            - `Initial inset from corner`を適切な値に変更する
+            - 出力ファイル名を指定します
+            - `Run`をクリックします
+        1. `Sample raster vlues`を実行する
+            - プロセッシングツールボックスを開く
+            - `Sample raster values`を検索し，選択します
+            - `Input layer`に`Regular points`の出力ファイルを指定します
+            - `Raster layer`に`IDW`の出力ファイルを指定します
+            - 出力ファイル名を指定します
+            - `Run`をクリックします
+    1. 方法2
+        1. `Raster pixels to points`を実行する
+            - プロセッシングツールボックスを開く
+            - `Raster pixels to points`を検索し，選択します
+            - `Input layer`に`IDW`の出力ファイルを指定します
+            - 出力ファイル名を指定します
+            - `Run`をクリックします
+
+
 ## QGISのバージョン3以上でSAGAを使用する方法
 
 QGISのバージョン3以上でSAGAを使用する方法について説明します．
