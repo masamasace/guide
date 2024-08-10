@@ -3,8 +3,63 @@ title: "Blenderの基本的な使用方法"
 date: "2024-03-22"
 ---
 
-## 公式ダウンロード元
-- 
+## CLIでの操作
+BlenderはCLIの操作も可能です。具体的にはBlenderのインストールが完了した状態でターミナルを開き、以下のコマンドを実行するとBlender内のPythonスクリプトを実行することができます。
+
+```bash
+blender -b -P /path/to/script.py
+```
+
+以下に、VSCodeでの環境設定方法を示します。
+
+### VSCodeでの環境設定
+
+1. VSCodeを開く。
+1. `ctrl + shift + p`を押し、`tasks: Configure Task`を選択する。
+1. `Create tasks.json file from template`を選択する。
+1. `Others`を選択する。
+1. 以下のように記述する。
+
+```json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Blender Python Script",
+            "type": "shell",
+            "command": "C:\\Program Files\\Blender Foundation\\Blender 4.2\\blender.exe",
+            "args": [
+                "-b",
+                "-P",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Run Blender Python script in background mode"
+        }
+    ]
+}
+```
+    - `command`の部分はblenderのバージョンとインストール位置に合わせて変更してください。
+1. 保存する。
+1. `ctrl + shift + p`を押し、`preferences: Open Keyboard Shortcuts (JSON)`を選択する。
+1. 以下のように記述する。
+
+```json
+{
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Run Blender Python Script"
+}
+```
+    - `key`の部分は好みのショートカットキーに変更してください。
+1. 保存する。
+
+これで、pythonファイルを開いた状態で`ctrl + shift + b`を押すことで、BlenderのPythonスクリプトを実行することができます。
+
 
 ## 移動・回転・拡大縮小
 - 拡大縮小はマウスホイール
