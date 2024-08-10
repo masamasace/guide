@@ -27,14 +27,6 @@ QGISの使い方についてまとめたページです．内容については�
 1. `Vector` > `Geoprocessing Tools` > `Union`でポリゴンを分割
 1. 不要な部分を削除しつつ、必要な部分を結合していく
     - 結合時には、`Advanced Digitiging Toolbar`>`Merge Selected Features`を選択することで、選択したポリゴンを結合できる
-1. ポリゴンの属性テーブルを開いて、各ポリゴンにIDを振る
-    - `Feature creation error (OGR error: failed to execute insert : UNIQUE constraint failed: union.fid)`というエラーが出る可能性がある
-         - `fid`フィールドの値を重複があるのが原因
-    - 編集モードにする
-    - `Open Attribute Table`を開いて、`field calculator`で`update existing field`を選択
-    - `fid`フィールドを選択して、`@id`を入力して実行
-    - 全ての地物に異なる`fid`が振られたことを確認して、編集モードを削除する。
-
 
 ## ラスターデータから3Dモデルを作成する方法
 事前に(粗いメッシュベクターデータから密な点群ベクターデータを作成する方法)[#粗いメッシュベクターデータから密な点群ベクターデータを作成する方法]から解像度が高めのラスターデータを作成しておいてください．
