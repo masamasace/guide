@@ -20,6 +20,7 @@
     1. LAMPPS
     1. YADE
         1. [YADEのトラブルシュートメモ](knowledge/DEM/yade_01.md)
+1. [液状化判定](knowledge/liquefaction_evaluation.md)
 
 ## 地震工学
 
